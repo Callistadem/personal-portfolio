@@ -46,6 +46,11 @@
     .about-containers{
         margin-top: 0;
     }
+
+    .about-text-container p{
+        width: 80vw;
+        text-align: justify;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -102,12 +107,6 @@
     .title{
         font-size: 2rem;
     }
-
-   .about-text-container p{
-        width: 80vw;
-        text-align: justify;
-    }
-
 
 }
 

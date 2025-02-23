@@ -226,23 +226,24 @@ section{
 }
 
 .about-details-container{
-    justify-content: center;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    display: flex;
 }
 
 .about-text-container{
     padding: 2rem;
     text-align: justify;
+    flex: 1;
+    min-width: 40%;
 }
 
 .about-containers{
     gap: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
 }

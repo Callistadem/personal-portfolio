@@ -17,24 +17,22 @@
         display: flex;
     }
 
-    #experience, .experience-details-container{
+    #about {
         margin-top: 2rem;
     }
 
-    #profile, .section-container{
+    #profile {
         display: block;
+        margin-bottom: 0;
     }
 
     .arrow{
         display: none;
     }
 
-    section, .section-container{
+    section {
         height: fit-content;
-    }
-
-    section{
-        margin: 0 5%;
+        margin: 5rem 2%;
     }
 
     .section__pic-container{
@@ -68,13 +66,12 @@
         margin-bottom: 0;
     }
 
-    .project-container{
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-    }
-
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
+    }
+
+    .contact-icon{
+        display: none;
     }
 
     .contact-info-container p, .nav-links li a {

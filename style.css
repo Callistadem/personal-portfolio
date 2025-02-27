@@ -74,8 +74,10 @@ a:hover {
 }
 
 .hamburger-menu{
-    position: relative;
     display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
 }
 
 .hamburger-icon{

@@ -69,6 +69,11 @@
         margin-bottom: 0;
     }
 
+    .project-container{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
     .about-containers, .contact-info-upper-container, .btn-container {
         flex-wrap: wrap;
     }

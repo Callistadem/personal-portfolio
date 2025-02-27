@@ -56,12 +56,11 @@
 @media screen and (max-width: 600px) {
 
     body{
-        font-size: small;
+        font-size: medium;
     }
 
     #contact {
         height: 80vh;
-        font-size: small;
     }
 
     #profile{

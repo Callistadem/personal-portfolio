@@ -4,247 +4,663 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Callista Dembegiotis</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <ul class="nav-links">
-            <li> <a href="#about">About</a></li>
-            <li> <a href="#skills">Skills</a></li>
-            <li> <a href="#projects">Projects</a></li>
-            <li> <a href="#contact">Contact</a></li>
+    <script src="script.js"></script> 
+
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-    <nav id="hamburger-nav">
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li> <a href="#about" onclick="toggleMenu()">About</a></li>
-                <li> <a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li> <a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li> <a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic2.png" alt="Callista's profile picture">
-        </div>
-        <div class="section__text">
-            <h1 class="title">Callista Dembegiotis</h1>
-            <p class="section__text_p2">Software Developer</p>
-            <div class="btn-container">
-                <button 
-                    class="btn" 
-                    onclick="window.open('./assets/resume.pdf')">
-                    View my CV
-                </button>
-
-                <button 
-                    class="btn" 
-                    onclick="location.href='./#contact'">
-                    Contact me
-                </button>
-            </div>
-
-            <div id="socials-container">
-                <a 
-                    href="https://linkedin.com/in/callista-dembegiotis/" 
-                    target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/linkedin.png" alt="My LinkedIn profile"  class="icon" />
-                </a>
-
-                <a 
-                    href="https://github.com/callistadem" 
-                    target="_blank" rel="noopener noreferrer">
-                    <img src="./assets/github.png" alt="My GitHub profile" class="icon" />
-                </a>
+    
+    <section id="home">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Hey, I'm Callista!</h1>
+                    <p class="tagline">CS Graduate and Software Developer</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
+    
     <section id="about">
-        <p class="section__text_p1">Get To Know More</p>
-        <h1 class="title"> About Me</h1>
-        <div class="about-details-container">
-            <p class="about-text-container"> 
-                Hi, my name is Callista! I recently graduated from a <b>B.Sc. Computer Science</b> at McGill University and I
-                am currently looking for full-time roles in software development. I am particularly interested in <b>fullstack development</b>.
-                <br>
-                <br>
-                However, having taken a variety of courses in machine learning, NLP, data science, and more, I am always curious to learn new things.   
-                My current focus is learning <b>iOS Development</b> with Swift and improving my web development skills!
-                <br>
-                <br>
-                When I'm not coding, I'm taking pictures, traveling or doing hot yoga!
-            </p>
-
-            <div class="about-containers">
-                 <div class="details-container">
-                    <h3> Experience </h3>
-                    <p> Software Developer - LiveGuard (startup)</p>
-                    <p> Teaching Assistant - McGill University</p>
-                    <p> Technical Sales Intern - IBM</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    Hi, my name is Callista! I recently graduated with a B.Sc. in Computer Science from McGill University and I'm currently seeking full-time roles in software development. 
+                    </br> </br> 
+                    I'm particularly passionate about fullstack development. However, having explored machine learning, NLP, data science, and more through my coursework, I'm always eager to dive into new challenges. 
+                    Right now, I'm focused on leveling up my full-stack development skills as well as learning iOS Development with Swift.
+                    </br> </br> 
+                    When I'm not coding, you'll find me capturing moments through my camera lens, traveling, or practicing hot yoga. 
                 </div>
-                <div class="details-container">
-                    <h3> Education </h3>
-                    <p> B.Sc. Computer Science - McGill University </p>
-                    <p> Computer Science (Exchange) - University of Groningen </p>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Go</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Swift</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>IDEs and Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Visual Studio Code</span>
+                            <span class="skill-tag">XCode</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Postman</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Spoken Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">English</span>
+                            <span class="skill-tag">French</span>
+                            <span class="skill-tag">Greek</span>
+                            <span class="skill-tag">Spanish</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
     </section>
-
-    <section id="skills">
-        <p class="section__text_p1">Take a look at my</p>
-        <h1 class="title">Skills</h1>
-        <div class="skills-containers">
-                <article class="skills-outer-container">
-                    <h3>Programming Languages and Frameworkds</h3>
-                    <div class="skills-container">
-                        <p class="skill">Python</p>
-                        <p class="skill">Java</p>
-                        <p class="skill">JavaScript</p>
-                        <p class="skill">Go</p>
-                        <p class="skill">HTML/CSS</p>
-                        <p class="skill">SQL</p>
-                        <p class="skill">React.js</p>
-                        <p class="skill">Vue.js</p>
-                    </div>
-                </article>
-
-                <article class="skills-outer-container">
-                    <h3>Tools and IDEs</h3>
-                    <div class="skills-container">
-                        <p class="skill">GitHub</p>
-                        <p class="skill">Visual Studio Code</p>
-                        <p class="skill">Xcode</p>
-                        <p class="skill">Figma</p>
-                        <p class="skill">Postman</p>
-                    </div>
-                </article>
-
-                <article class="skills-outer-container">
-                    <h3>Spoken Languages</h3>
-                    <div class="skills-container">
-                        <p class="skill">English</p>
-                        <p class="skill">French</p>
-                        <p class="skill">Greek</p>
-                        <p class="skill">Spanish</p>
-                    </div>
-                </article>
-           
+    
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Software Developer Intern</h3>
+                    <span class="date">May 2025 – Aug. 2025</span>
+                    <span class="company">Streamwise (formerly LiveGuard)</span>
+                    <ul>
+                        <li>Designed and implemented a core product feature which enables streamers to fully customize their livestreams (mute words, blur logos, trigger sounds in real-time)</li>
+                        <li>Architected a database schema to support the customization feature</li>
+                        <li>Built, documented, and tested REST API endpoints in Go using Postman</li>
+                        <li>Created a frontend interface with React and ReactFlow for intuitive user experience</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Undergraduate Teaching Assistant</h3>
+                    <span class="date">Sept. 2023 – Dec. 2023</span>
+                    <span class="company">McGill University</span>
+                    <ul>
+                        <li>Provided technical guidance to 300+ students on digital logic and MIPS assembly</li>
+                        <li>Evaluated and provided detailed feedback on 150+ assignments</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Technical Sales Intern</h3>
+                    <span class="date">May 2023 – Aug. 2023</span>
+                    <span class="company">IBM</span>
+                    <ul>
+                        <li>Delivered 5+ product demonstrations individually and in team settings</li>
+                        <li>Participated in workshops covering objection handling, negotiation, and sales processes</li>
+                        <li>Engaged in weekly internal and client-facing sales calls</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 4rem;">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Bachelor of Science, Computer Science</h3>
+                    <span class="date">Jan. 2021 – Feb. 2025</span>
+                    <span class="company">McGill University – Montreal, QC, Canada</span>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Exchange Program</h3>
+                    <span class="date">Feb. 2024 – July 2024</span>
+                    <span class="company">University of Groningen – Groningen, Netherlands</span>
+                </div>
+            </div>
         </div>
-
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
     </section>
-
+    
     <section id="projects">
-        <p class="section__text_p1"> Browse my recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="project-containers">
-
-            <div class="details-container project-container">
-               
-                <img src="./assets/project-1.png" alt="project 1" class="project-img" />
-     
-                <div class="project-info">
-                    <h2 class="project-title">Personal Portfolio</h2>
-                    <div class="project-description">
-                        <b>Technologies:</b> HTML, CSS, JavaScript
-                        <br>
-                        <br>
-                        Started out by following <a href="https://www.youtube.com/watch?v=ldwlOzRvYOU" target="_blank"> this </a>YouTube tutorial for the base of the webpage. 
-                        Then customized the website sections myself using HTML and CSS. 
-                    </div>
-                    <div class="btn-container">
-                        <button 
-                            class="btn project-btn" 
-                            onclick=" window.open('https://github.com/Callistadem/personal-portfolio','_blank') ">
-                            GitHub 
-                        </button>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('bookbook')">
+                    <h3>BookBook</h3>
+                    <span class="project-role">Full Stack Developer • In Progress</span>
+                    <p>A comprehensive full-stack application serving as a virtual library and reading habit tracker.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Express</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="details-container project-container">
-                <img src="./assets/project-2.png" alt="project 2" class="project-img" />
-                <div class="project-info">
-                    <h2 class="project-title">Gomibo MRS</h2>
-                    <div class="project-description">
-                            <b>Technologies:</b> 
-                            React, HTML, CSS, JavaScript, Figma
-                            <br>
-                            <b>Role:</b> UI/UX Lead
-                            <br>
-                            <br>
-                            Led 2 frontend developers in a team of 5 to design and develop an internal malfunction report
-                            system website for Gomibo employees. Designed and implemented the front end, enhacing user experience for both
-                            reporters and maintenance personel.
-                    </div>
-                    <div class="btn-container">
-                        <button 
-                            class="btn project-btn" 
-                            onclick=" window.open('https://github.com/Callistadem/MRS','_blank') ">
-                            GitHub 
-                        </button>
+                
+                <div class="project-card" onclick="openModal('gomibo')">
+                    <h3>Gomibo Malfunction Report System</h3>
+                    <span class="project-role">Lead Frontend Developer</span>
+                    <p>Led a team to design and develop an internal malfunction report system with intuitive interfaces.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge">JavaScript</span>
                     </div>
                 </div>
-            </div>
-
-            <div class="details-container project-container">
-                <img src="./assets/project-3.png" alt="project 3" class="project-img" />
-                <div class="project-info">
-                    <h2 class="project-title">RedTalk</h2>
-                    <div class="project-description">
-                        <b>Technologies:</b> React, HTML, CSS, JavaScript, Figma
-                        <br>
-                        <b>Role:</b> Frontend Developer
-                        <br>
-                        <br>
-                        Collaborated in a team of 4 to develop an internal communication web application for McGill
-                        staff and students, serving as a Slack/Discord replacement. Designed and implemented the front end and 
-                        integrated backend functionality through API endpoints developed by the backend team.
+                
+                <div class="project-card" onclick="openModal('fitness')">
+                    <h3>Fitness Retreat Website</h3>
+                    <span class="project-role">Freelance Web Developer</span>
+                    <p>First freelance project creating an engaging website for a fitness retreat event in Mexico.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">HTML/CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Responsive Design</span>
                     </div>
-                    <div class="btn-container">
-                        <button 
-                            class="btn project-btn" 
-                            onclick=" window.open('https://github.com/Callistadem/RedTalk','_blank') ">
-                            GitHub 
-                        </button>
+                </div>
+                
+                <div class="project-card" onclick="openModal('redtalk')">
+                    <h3>RedTalk</h3>
+                    <span class="project-role">Frontend Developer</span>
+                    <p>Internal communication platform for McGill staff and students as a Slack/Discord alternative.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Figma</span>
+                        <span class="tech-badge">REST API</span>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
-
+    
     <section id="contact">
-        <h1 class="title"> Contact Me </h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="email icon" class="icon email-icon contact-icon"/>
-                <p><a href="mailto:callista.dembegiotis@gmail.com">callista.dembegiotis@gmail.com</a></p>
+        <div class="container">
+            <div class="contact-content">
+                <h2>Let's Create Something Together</h2>
+                <p>Whether you're looking to hire a passionate developer or need a creative website for your business, I'd love to hear from you!</p>
+                <div class="cta-buttons">
+                    <a href="mailto:callista.dembegiotis@gmail.com" class="btn btn-primary">Email Me</a>
+                </div>
+                <div class="contact-links">
+                    <a href="https://linkedin.com/in/callista-dembegiotis" class="contact-link" target="_blank">
+                        LinkedIn →
+                    </a>
+                    <a href="https://github.com/Callistadem" class="contact-link" target="_blank">
+                        GitHub →
+                    </a>
+                </div>
             </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon"/>
-                <p><a href="https://linkedin.com/in/callista-dembegiotis/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-            </div>
-        </div> 
+        </div>
     </section>
-
+    
     <footer>
-        <p>Copyright &#169; 2025 Callista Dembegiotis. All rights reserved.</p>
+        <div class="container">
+            <p>© 2025 Callista Dembegiotis. Designed & built with passion ✨</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
+    
+    <!-- Project Modals -->
+    <div id="modal-bookbook" class="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeModal('bookbook')">×</div>
+            <div class="modal-header">
+                <h2>BookBook</h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">Full Stack Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Timeline</span>
+                        <span class="meta-value">In Progress</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Type</span>
+                        <span class="meta-value">Personal Project</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-image">Coming Soon</div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>BookBook is a comprehensive full-stack web application designed for readers to track their reading habits and manage their personal libraries. The platform combines the functionality of a virtual library with reading analytics to help users stay motivated and organized in their reading journey.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>User authentication system with secure login and registration</li>
+                    <li>Personal virtual library to catalog books by status (reading, completed, want to read)</li>
+                    <li>Reading habit tracker</li>
+                    <li>Book search integration to easily add new titles to your library</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technical Implementation</h3>
+                <div class="challenges-list">
+                    <div class="challenge-item">
+                        <h4>Frontend Architecture</h4>
+                        <p>Built with React.js using functional components and hooks for state management. Implemented responsive design principles to ensure seamless experience across desktop and mobile devices. Created reusable component library for consistent UI/UX throughout the application.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Backend Development</h4>
+                        <p>Developed RESTful API using Node.js and Express framework. Implemented JWT authentication for secure user sessions.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Database Design</h4>
+                        <p>Utilized PostgreSQL to efficiently store user data, book information, and reading progress.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Frontend</div>
+                        <div class="tech-name">React.js</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Backend</div>
+                        <div class="tech-name">Node.js</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Backend</div>
+                        <div class="tech-name">Express</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Database</div>
+                        <div class="tech-name">PostgreSQL</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Styling</div>
+                        <div class="tech-name">CSS3</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Auth</div>
+                        <div class="tech-name">JWT</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>What I Learned</h3>
+                <ul>
+                    <li>Full-stack application architecture and how frontend and backend communicate effectively</li>
+                    <li>Database schema design for relationships and data integrity</li>
+                    <li>User authentication best practices and security considerations</li>
+                    <li>State management in React for handling complex application state</li>
+                    <li>API design principles for creating intuitive and scalable endpoints</li>
+                </ul>
+                
+                <div class="outcome-highlight">
+                    <h4>Current Status & Next Steps</h4>
+                    <p>The core functionality is currently being implemented. Next steps include adding social features to allow users to share book recommendations with friends, integrating with external book APIs for richer book data, and implementing a mobile app version using React Native.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-gomibo" class="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeModal('gomibo')">×</div>
+            <div class="modal-header">
+                <h2>Gomibo Malfunction Report System</h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">Lead Frontend Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Team Size</span>
+                        <span class="meta-value">5 Members</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Type</span>
+                        <span class="meta-value">Team Project</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-image">[Project Screenshot/Demo]</div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>Gomibo needed an internal system to streamline their malfunction reporting process. Previously, reports were handled through email chains and spreadsheets, leading to delays and miscommunication. Our team developed a centralized web application that allows staff to report issues and maintenance personnel to track and resolve them efficiently.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>My Contributions</h3>
+                <ul>
+                    <li>Led a team of 2 frontend developers, delegating tasks and conducting code reviews</li>
+                    <li>Designed all user interfaces in Figma, creating mockups for both reporter and maintenance views</li>
+                    <li>Implemented the entire frontend using React.js with component-based architecture</li>
+                    <li>Created intuitive forms for submitting malfunction reports with photo upload capability</li>
+                    <li>Built a dynamic dashboard for maintenance team to view, filter, and update report statuses</li>
+                    <li>Integrated with backend APIs to fetch and update report data in real-time</li>
+                    <li>Implemented responsive design for use on tablets and mobile devices in the field</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <div class="challenges-list">
+                    <div class="challenge-item">
+                        <h4>Reporter Interface</h4>
+                        <p>Intuitive form allowing staff to quickly report malfunctions with details like location, severity, description, and photo attachments. Auto-save functionality prevents data loss, and users receive confirmation with a unique tracking number.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Maintenance Dashboard</h4>
+                        <p>Comprehensive view of all reports with filtering options by status, location, and priority. Visual indicators for urgent reports. One-click status updates and assignment of reports to specific maintenance personnel.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Real-time Updates</h4>
+                        <p>Automatic refresh of dashboard when new reports come in or statuses change. Notification system to alert maintenance team of high-priority issues.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Frontend</div>
+                        <div class="tech-name">React.js</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Design</div>
+                        <div class="tech-name">Figma</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Language</div>
+                        <div class="tech-name">JavaScript</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Styling</div>
+                        <div class="tech-name">CSS3</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Leadership & Collaboration</h3>
+                <ul>
+                    <li>Conducted daily standup meetings with frontend team to track progress and address blockers</li>
+                    <li>Established coding standards and component structure for consistency across the codebase</li>
+                    <li>Mentored junior developers on React best practices and component lifecycle</li>
+                    <li>Collaborated closely with backend team to define API contracts and data structures</li>
+                    <li>Gathered feedback from end users and iterated on designs to improve usability</li>
+                </ul>
+                
+                <div class="outcome-highlight">
+                    <h4>Impact</h4>
+                    <p>The system reduced average malfunction resolution time by 40% and eliminated the confusion of email-based reporting. Maintenance team reported significantly improved organization, and staff praised the intuitive interface. The project successfully transitioned from development to production and is now used daily by the entire Gomibo team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-fitness" class="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeModal('fitness')">×</div>
+            <div class="modal-header">
+                <h2>Fitness Retreat Website</h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">Freelance Web Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Client</span>
+                        <span class="meta-value">Fitness Retreat Event</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value">Mexico</span>
+                    </div>
+                </div>
+            </div>
+            
+            <a class="modal-image" href="https://soul-strong-retreat.vercel.app/src/html/retreat.html" target="_blank"><img src="assets/project-retreat.png"></a>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>This was my first freelance web development project! I was approached to create a website for a week-long fitness retreat taking place in Tulum, Mexico. The client wanted a vibrant, energetic site that would capture the essence of their retreat while making it easy for potential participants to learn about the event and register.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Client Requirements</h3>
+                <ul>
+                    <li>Eye-catching landing page that immediately conveys the retreat's energy and vibe</li>
+                    <li>Detailed schedule section showcasing daily activities (yoga, HIIT, beach workouts, etc.)</li>
+                    <li>Information about instructors with photos and bios</li>
+                    <li>Accommodation details and pricing tiers</li>
+                    <li>Easy-to-use registration form</li>
+                    <li>Photo gallery from previous retreats</li>
+                    <li>Mobile-responsive design since most users browse on phones</li>
+                    <li>FAQ section addressing common questions</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Design Approach</h3>
+                <div class="challenges-list">
+                    <div class="challenge-item">
+                        <h4>Visual Identity</h4>
+                        <p>Developed a color palette inspired by Mexican sunsets and tropical beaches - warm oranges, vibrant pinks, and turquoise blues. Used modern, clean typography with energetic animations to reflect the high-energy nature of the retreat.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>User Experience</h4>
+                        <p>Implemented smooth scrolling navigation and strategically placed call-to-action buttons throughout the site. Created an intuitive flow guiding visitors from learning about the retreat to registration.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Performance</h4>
+                        <p>Optimized all images for fast loading times without sacrificing quality. Ensured the site performed well even on slower mobile connections.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Markup</div>
+                        <div class="tech-name">HTML5</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Styling</div>
+                        <div class="tech-name">CSS3</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Interactivity</div>
+                        <div class="tech-name">JavaScript</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Design</div>
+                        <div class="tech-name">Responsive</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Challenges & Solutions</h3>
+                <ul>
+                    <li><strong>Working with a real client:</strong> This was my first experience managing client expectations, feedback cycles, and deadlines. I learned to ask clarifying questions upfront and provide regular updates throughout development.</li>
+                    <li><strong>Design without a design team:</strong> I had to wear multiple hats - developer and designer. This pushed me to improve my eye for design and learn design principles beyond just coding.</li>
+                    <li><strong>Mobile-first approach:</strong> Ensured the site looked and functioned beautifully on all devices by starting with mobile design and progressively enhancing for larger screens.</li>
+                    <li><strong>Image optimization:</strong> Learned techniques for compressing images and using appropriate formats to maintain quality while improving load times.</li>
+                </ul>
+                
+                <div class="outcome-highlight">
+                    <h4>Results & Client Feedback</h4>
+                    <p>The client was thrilled with the final result! The website successfully conveyed the retreat's energy and made the registration process seamless. Within the first week of launch, they reported a significant increase in inquiries and registrations compared to their previous events. This project gave me confidence to pursue more freelance opportunities and showed me the impact good web development can have on a business.</p>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>What I Learned</h3>
+                <ul>
+                    <li>How to translate a client's vision into a functional, beautiful website</li>
+                    <li>The importance of communication and managing expectations in freelance work</li>
+                    <li>Responsive design principles and mobile-first development</li>
+                    <li>Image optimization and performance considerations</li>
+                    <li>The business side of web development - pricing, contracts, and timelines</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-redtalk" class="modal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="closeModal('redtalk')">×</div>
+            <div class="modal-header">
+                <h2>RedTalk</h2>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">Frontend Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Team Size</span>
+                        <span class="meta-value">4 Members</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Client</span>
+                        <span class="meta-value">McGill University</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-image">[Project Screenshot/Demo]</div>
+            
+            <div class="modal-section">
+                <h3>Project Overview</h3>
+                <p>RedTalk is an internal communication web application designed specifically for McGill University staff and students. The goal was to create a Slack/Discord alternative that could integrate with McGill's existing systems while providing familiar messaging and collaboration features. Our team of 4 developed this application to improve campus communication and reduce reliance on external platforms.</p>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time messaging with channels organized by departments, courses, and student groups</li>
+                    <li>Direct messaging for one-on-one conversations</li>
+                    <li>File sharing capabilities for documents and images</li>
+                    <li>User authentication integrated with McGill's system</li>
+                    <li>Search functionality to find messages, files, and users</li>
+                    <li>Notification system for mentions and direct messages</li>
+                    <li>Channel creation and management for administrators</li>
+                    <li>User profiles showing department affiliation and role (student/staff/faculty)</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>My Contributions</h3>
+                <div class="challenges-list">
+                    <div class="challenge-item">
+                        <h4>UI/UX Design</h4>
+                        <p>Collaborated on designing the user interface in Figma, focusing on creating an intuitive layout similar to familiar chat applications while adding McGill-specific branding. Designed the channel sidebar, message view, and user profile sections.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>Frontend Implementation</h4>
+                        <p>Built the frontend using React.js, implementing components for the chat interface, channel list, message input, and user management. Focused on creating reusable components to maintain code quality and consistency.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>API Integration</h4>
+                        <p>Worked closely with the backend team to integrate RESTful API endpoints. Implemented data fetching for messages, channels, and user information. Handled error states and loading indicators for better user experience.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h4>State Management</h4>
+                        <p>Implemented complex state management to handle real-time message updates, channel switching, and user presence indicators. Ensured smooth transitions and responsive UI updates.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Tech Stack</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Frontend</div>
+                        <div class="tech-name">React.js</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Design</div>
+                        <div class="tech-name">Figma</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">API</div>
+                        <div class="tech-name">REST</div>
+                    </div>
+                    <div class="tech-stack-item">
+                        <div class="tech-category">Styling</div>
+                        <div class="tech-name">CSS3</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Team Collaboration</h3>
+                <ul>
+                    <li>Participated in weekly team meetings to discuss progress, blockers, and upcoming tasks</li>
+                    <li>Collaborated with backend developers to define API contracts and data structures</li>
+                    <li>Conducted pair programming sessions to tackle complex features</li>
+                    <li>Used Git for version control and conducted code reviews for quality assurance</li>
+                    <li>Gathered feedback from potential users and iterated on designs</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Technical Challenges</h3>
+                <ul>
+                    <li><strong>Real-time updates:</strong> Implementing efficient polling mechanisms to fetch new messages without overwhelming the server</li>
+                    <li><strong>Performance optimization:</strong> Managing large lists of messages and channels while maintaining smooth scrolling and interactions</li>
+                    <li><strong>Complex UI state:</strong> Handling multiple concurrent states like which channel is active, unread message counts, and user online status</li>
+                    <li><strong>Cross-browser compatibility:</strong> Ensuring consistent behavior across different browsers used by students and staff</li>
+                </ul>
+                
+                <div class="outcome-highlight">
+                    <h4>Learning Experience</h4>
+                    <p>This project significantly improved my ability to work in a team development environment. I learned how to effectively communicate with backend developers, translate designs into functional code, and handle the complexities of a real-time communication application. It also reinforced the importance of user-centered design and iterative development based on feedback.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
